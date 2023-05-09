@@ -22,13 +22,6 @@ class FilamentServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Filament::serving(function(){
-            Filament::registerUserMenuItems([
-                UserMenuItem::make()
-                ->label('Manage User')
-                ->url(UserResource::getUrl())
-                ->icon('heroicon-s-users'),
-            ]);
-        });
+        //
     }
 }
